@@ -1,0 +1,26 @@
+
+<section>
+    <h2>lista de productos</h2>
+</section>
+
+<form class="example-form">
+    
+    <mat-list>
+        <div mat-subheader>Productos</div>
+        <mat-list-item *ngFor="let product of products | async">
+          <mat-icon mat-list-icon>folder</mat-icon>
+          <div mat-line><b>{{product.code}}</b></div>
+          <div mat-line> {{product.name}} </div>
+          <div mat-line> {{product.price}} </div>
+        </mat-list-item>
+        <mat-divider></mat-divider>    
+      </mat-list>
+</form>
+
+
+<section>
+    <div class="example-label"></div>
+    <div class="example-button-row">      
+      <button mat-raised-button color="primary" (click)="goListProduct()"> Crear producto</button>            
+    </div>
+  </section>

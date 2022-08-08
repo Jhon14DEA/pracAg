@@ -1,0 +1,40 @@
+<H1>Crear un producto</H1>
+    
+<form class="example-form">
+
+
+    <table class="example-full-width" cellspacing="0">
+        <tr>
+            <td>
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Codigo</mat-label>
+                    <input [(ngModel)]="product.code" name="txtCodigo" matInput  >                                        
+                </mat-form-field>
+            </td>
+            <td>
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Nombre</mat-label>
+                    <input [(ngModel)]="product.name" name="txtNombre" matInput  >                    
+                </mat-form-field>
+            </td>
+        </tr>
+    </table>
+
+    <p>
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Precio</mat-label>
+            <input [(ngModel)]="product.price" name="txtPrecio" matInput>            
+        </mat-form-field>
+    </p>
+    
+</form>
+
+<section>
+    <div class="example-label"></div>
+    <div class="example-button-row">      
+      <button mat-raised-button color="primary" (click) = "save()">Guardar</button>
+      <button mat-raised-button color="accent" (click) = "goNewProduct()">Listar Producto</button>      
+    </div>
+  </section>
+
+

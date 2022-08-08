@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "pracag": {
+      "hosting": {
+        "pracAg": [
+          "pracag"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "pracag"
+  }
+}
